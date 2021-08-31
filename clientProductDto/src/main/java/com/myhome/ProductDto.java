@@ -18,4 +18,5 @@ public class ProductDto {
         this.title = title;
         this.price = price;
     }
+
 }
