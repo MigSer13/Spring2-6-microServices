@@ -3,6 +3,7 @@ package com.myhomeDB.services;
 import com.myhomeDB.models.Product;
 import com.myhomeDB.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
@@ -24,8 +25,8 @@ public class ProductService {
         return productRepository.findById(id);
     }
 
-    public Page<Product> findPage(int pageIndex, int pageSize, Specification<Product> spec) {
-        return productRepository.findAll(spec, PageRequest.of(pageIndex, pageSize));
+    public Page<Product> findPage(int pageIndex, int pageSize) {
+        return productRepository.findAll(PageRequest.of(pageIndex, pageSize));
     }
 
     public Product save(Product newProduct) {

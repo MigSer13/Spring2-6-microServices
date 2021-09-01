@@ -24,7 +24,7 @@ public class RequestController {
     @HystrixCommand(fallbackMethod = "productsFallback")
     @GetMapping("/products")
     public String getProducts(){
-        String result = restTemplate.getForObject("http://eureka-clientDB/api/v1/products", String.class);
+        String result = restTemplate.getForObject("http://eureka-client-DB/api/v1/products", String.class);
         return result;
     }
 
