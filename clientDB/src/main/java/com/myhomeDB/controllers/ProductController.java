@@ -5,12 +5,8 @@ import com.myhomeDB.exeptions.ResourceNotFoundException;
 import com.myhomeDB.models.Product;
 import com.myhomeDB.services.ProductService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.jpa.domain.Specification;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
