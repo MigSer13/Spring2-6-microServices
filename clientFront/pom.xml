@@ -7,15 +7,15 @@
         <groupId>com.example-microServices</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>clientFront</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.2.9.RELEASE</version>
+<!--            <version>3.0.3</version>-->
         </dependency>
 
         <dependency>
