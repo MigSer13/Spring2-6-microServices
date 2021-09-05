@@ -1,6 +1,10 @@
 server:
   port: 1902
 
+spring:
+  application:
+    name: eureka-client-DB
+
 eureka:
   instance:
     hostname: localhost

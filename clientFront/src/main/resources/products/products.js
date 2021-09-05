@@ -1,4 +1,4 @@
-angular.module('app', ['ngStorage']).controller('indexController', function ($scope, $http, $localStorage) {
+angular.module('app').controller('indexController', function ($scope, $http) {
     //const contextPath = 'http://localhost:8189/summer/api/v1';
 
     $scope.loadPage = function (pageIndex = 1) {
@@ -10,7 +10,6 @@ angular.module('app', ['ngStorage']).controller('indexController', function ($sc
             }
         }).then(function (response) {
             $scope.productsPage = response.data;
-            $scope.navList = $scope.generatePagesIndexes(1, $scope.productsPage.totalPages);
             console.log(response.data);
         });
     };

@@ -1,0 +1,14 @@
+server:
+  port: 1901
+
+spring:
+  application:
+    name: eureka-clientFront
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9000/eureka}
+      fetchRegistry: false
